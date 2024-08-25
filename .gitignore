@@ -23,3 +23,5 @@ rawg_io_api_key.txt
 *.njsproj
 *.sln
 *.sw?
+
+.vercel
