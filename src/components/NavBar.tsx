@@ -1,17 +1,17 @@
-import { HStack, Image, space } from "@chakra-ui/react";
-import logo from "../assets/logo1.png";
+import { HStack, Image } from "@chakra-ui/react";
+import logo from "../assets/logo.webp";
 import ColorModeSwitch from "./ColorModeSwitch";
-import SeacrchInput from "./SeacrchInput";
+import SearchInput from "./SearchInput";
 
 interface Props {
-  onSeacrch: (searchText: string) => void;
+  onSearch: (searchText: string) => void;
 }
 
-const NavBar = ({ onSeacrch }: Props) => {
+const NavBar = ({ onSearch }: Props) => {
   return (
-    <HStack justifyContent="space-between" padding="10px">
-      <Image src={logo} boxSize="60px"></Image>
-      <SeacrchInput onSeacrch={onSeacrch} />
+    <HStack padding="10px">
+      <Image src={logo} boxSize="60px" />
+      <SearchInput onSearch={onSearch} />
       <ColorModeSwitch />
     </HStack>
   );
