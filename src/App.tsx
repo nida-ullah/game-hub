@@ -8,6 +8,7 @@ import PlatformSelector from "./components/PlatformSelector";
 import SortSelector from "./components/SortSelector";
 import { Platform } from "./hooks/useGames";
 import { Genre } from "./hooks/useGenres";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export interface GameQuery {
   genre: Genre | null;
